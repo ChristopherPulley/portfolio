@@ -49,7 +49,7 @@ router.post("/contact", (req, res) => {
 
   // Specify what the email will look like
   const mailOpts = {
-    from: "CPulleyWebDesign@gmail.com", // This is ignored by Gmail
+    from: "", // This is ignored by Gmail
     to: gmail_user,
     subject: "New message from contact form at cpulleywebdesign.com",
     text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
