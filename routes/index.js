@@ -1,11 +1,8 @@
 // routes for homepage and user registration/login functions
 
-const gmail_user = process.env.gmail_username;
-const gmail_pass = process.env.gmail_password;
-
 // required packages and files
 const express = require("express"),
-  router = express.Router(),
+  router = express.Router({ mergeParams: true }),
   nodemailer = require("nodemailer");
 
 //  root route
@@ -39,8 +36,8 @@ router.post("/contact", (req, res) => {
   const smtpTrans = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: gmail_user,
-      pass: gmail_pass
+      user: _user,
+      pass: _pass
     }
   });
 
