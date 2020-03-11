@@ -5,7 +5,7 @@ const gmail_pass = process.env.gmail_pass;
 
 // required packages and files
 const express = require("express"),
-  router = express.Router({ mergeParams: true }),
+  router = express.Router({ mergeParams: true }), // must merge for email to work
   nodemailer = require("nodemailer");
 
 //  root route
