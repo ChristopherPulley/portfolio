@@ -44,7 +44,7 @@ app.use(indexRoutes);
 // Using /views .ejs files for res. calls
 app.set("view engine", "ejs");
 
-app.listen(process.env.port, process.env.IP, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log(
     "App.js Running on Port %d, in %s mode",
     this.address().port,
