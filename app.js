@@ -45,7 +45,11 @@ app.use(indexRoutes);
 app.set("view engine", "ejs");
 
 app.listen(process.env.port, process.env.IP, function() {
-  console.log("App.js Running on Port 3000: Press Ctrl^C to exit");
+  console.log(
+    "App.js Running on Port %d, in %s mode",
+    this.address().port,
+    app.settings.env
+  );
   //  var timer = setInterval(function() {
   //    console.log(`Listening for Request on Port ${myPort}`);
   //  }, 1000);
