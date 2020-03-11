@@ -3,9 +3,6 @@
 const gmail_user = process.env.gmail_username;
 const gmail_pass = process.env.gmail_password;
 
-console.log(gmail_user);
-console.log(gmail_pass);
-
 // required packages and files
 const express = require("express"),
   router = express.Router(),
@@ -49,7 +46,7 @@ router.post("/contact", (req, res) => {
 
   // Specify what the email will look like
   const mailOpts = {
-    from: "", // This is ignored by Gmail
+    from: "cpulleywebdesign@gmail.com", // This is ignored by Gmail
     to: gmail_user,
     subject: "New message from contact form at cpulleywebdesign.com",
     text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
