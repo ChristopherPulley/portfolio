@@ -1,7 +1,7 @@
 // routes for homepage and user registration/login functions
 
-const gmail_user = res.locals.g_user;
-const gmail_pass = res.locals.g_pass;
+const gmail_user = process.env.gmail_user;
+const gmail_pass = process.env.gmail_pass;
 
 // required packages and files
 const express = require("express"),
