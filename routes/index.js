@@ -68,5 +68,9 @@ router.post("/contact", (req, res) => {
   });
 });
 
+router.get("*", (req, res) => {
+  router.redirect("/");
+});
+
 // always export !!!
 module.exports = router;
