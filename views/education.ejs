@@ -1,0 +1,87 @@
+<%- include("./partials/header") %>
+<link rel="stylesheet" type="text/css" href="/app.css" />
+</head>
+</html>
+
+<body>
+  <div>
+    <%- include("./partials/navbar") %>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div id="education-header" class="col background-header">
+        <h1 class="display-1 text-center">Education</h1>
+        <p class="lead header-text">These are things I know.</p>
+      </div>
+    </div>
+
+    <div class="row mt-lg-4"> 
+    <!-- bootcamp -->
+      <div class="col-lg-4">
+        <div class="card bg-dark border-lgt">
+          <div class="card-header border-lgt">
+            <div class="d-inline">
+              <img class="img-fluid mb-2" src="images/udemy-logo.jpg" height="50px" width="50px" alt="">
+              <h5 class="d-inline">Udemy Online Academy</h5> 
+              <h5>The Web Developer Bootcamp</h5>
+              <h5>February 2020</h5>
+            </div>   
+          </div>
+          <div class="card-body">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, incidunt recusandae. Incidunt nesciunt assumenda tenetur quia rem nostrum maxime. Saepe ratione iste illum odio aspernatur, optio doloribus. Officia eum beatae ullam cum ipsum delectus, illum tempore incidunt, enim, ut corporis aliquam necessitatibus. Velit, recusandae? Tenetur maiores vitae laudantium temporibus? Nam!</p>
+          </div>
+          <div class="card-footer border-lgt">
+            <p>Curriculum: HTML5, CSS3, JavaScript, JQuery, NodeJs, Express, APIs, RESTful Routing, Authentication, Heroku Deployment, Git and GitHub </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap -->
+      <div class="col-lg-4">
+        <div class="card bg-dark border-lgt">
+          <div class="card-header border-lgt">
+            <div class="d-inline">
+              <img class="img-fluid mb-2" src="images/udemy-logo.jpg" height="50px" width="50px" alt="">
+              <h5 class="d-inline">Udemy Online Academy</h5> 
+              <h5>Bootstrap 4 from Scratch</h5>
+              <h5>August 2019</h5>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, incidunt recusandae. Incidunt nesciunt assumenda tenetur quia rem nostrum maxime. Saepe ratione iste illum odio aspernatur, optio doloribus. Officia eum beatae ullam cum ipsum delectus, illum tempore incidunt, enim, ut corporis aliquam necessitatibus. Velit, recusandae? Tenetur maiores vitae laudantium temporibus? Nam!</p>
+          </div>
+          <div class="card-footer border-lgt">
+            <p>Curriculum: Bootstrap 4, HTML5, CSS3, Javascript, JQuery</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACC -->
+      <div class="col-lg-4">
+        <div class="card bg-dark border-lgt">
+          <div class="card-header border-lgt">
+            <div class="d-inline">
+              <img class="img-fluid mb-2" src="images/acc-logo.jpg" height="50px" width="50px" alt="">
+              <h5 class="d-inline">Austin Community College</h5>
+              <h5>Associates Degreev (AAS) Computer Programming and Web Development</h5> 
+              <h5>2016 - 2018</h5>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, incidunt recusandae. Incidunt nesciunt assumenda tenetur quia rem nostrum maxime. Saepe ratione iste illum odio aspernatur, optio doloribus. Officia eum beatae ullam cum ipsum delectus, illum tempore incidunt, enim, ut corporis aliquam necessitatibus. Velit, recusandae? Tenetur maiores vitae laudantium temporibus? Nam!</p>
+          </div>
+          <div class="card-footer border-lgt">
+            <p>Curriculum: HTML5, CSS3, JavaScript, JQuery, PHP, MySQL, Oracle DB, Java, C, C#, Photoshop, Dreamweaver</p>
+          </div>
+        </div>
+      </div>
+    <!-- end of row -->  
+    </div>
+  </div>
+
+    <%- include("./partials/bootstrap") %>
+  <script>
+  $("#education-link").addClass("active");
+  </script>
+</body>

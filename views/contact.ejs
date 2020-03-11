@@ -1,0 +1,86 @@
+<%- include("./partials/header") %>
+    <link rel="stylesheet" type="text/css" href="/app.css" />
+  </head>
+</html>
+
+<body>
+  <div>
+    <%- include("./partials/navbar") %>
+  </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div id="contact-header" class="col background-header">
+          <h1 class="display-1 text-center">Contact Me</h1> 
+          <p class="lead header-text">This is how to talk to me.</p>       
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <% if (error && error.length > 0) { %>
+      <div class="flashMessage alert alert-danger" role="alert">
+        <%= error %>
+      </div>
+      <% } %> <% if (success && success.length > 0) { %>
+      <div class="flashMessage alert alert-success" role="alert">
+        <%= success %>
+      </div>
+      <% } %>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row d-flex justify-content-center"> 
+        <div class="col-lg-6">
+          <div class="card card-body bg-dark">
+            <form action="/contact" id="contact-form" method="POST" role="form">
+              <div class="form-group">
+
+              <div class="input-group input-group-lg mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-primary border-lgt">
+                    <i class="fas fa-user small-tab text-light"></i>
+                  </span>
+                </div>
+                  <input type="text" name="name" id="name" class="form-control border-lgt" placeholder=" Your Name" required>
+              </div>     
+                    
+              <div class="input-group input-group-lg mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-warning border-lgt">
+                    <i class="fas fa-envelope text-light"></i>
+                  </span>
+                </div>
+                  <input type="email" name="email" id="email" class="form-control border-lgt" placeholder="Your Email" required>
+              </div> 
+
+              <div class="input-group input-group-lg mb-1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-success border-lgt">
+                    <i class="fas fa-pencil-alt text-light"></i>
+                  </span>
+                </div>
+                  <textarea name="message" id="message" class="form-control border-lgt" placeholder="Your Message." required></textarea>
+              </div>
+
+              <input
+                type="submit"
+                value="Send Email"
+                class="btn btn-danger  btn-lg"
+              />
+              <input type="reset" name="contactReset" id="contactReset"
+               class="btn btn-danger btn-lg float-right"
+              />
+              </div>
+            </form>
+            <%- include("./partials/resume-button") %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include("./partials/bootstrap") %>
+  <script>
+  $("#contact-link").addClass("active");
+  </script>
+</body>

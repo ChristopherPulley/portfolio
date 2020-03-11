@@ -1,0 +1,45 @@
+<%- include("./partials/header") %>
+<link rel="stylesheet" type="text/css" href="/app.css" />
+</head>
+</html>
+
+<body>
+  <div>
+    <%- include("./partials/navbar") %>
+  </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div id="about-header" class="col background-header">
+          <h1 class="display-1 text-center">About Me</h1>
+          <p class="lead header-text">This is who I am.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-lg-4">
+      <div class="card card-body border-lgt bg-almost-black">
+        <div class="row"> 
+          <div class="col-lg-8 grey-text pl-5">
+            <p class="mt-lg-3">A lifelong automotive enthusiast I've spent the first part of my career in the auto shop. Whether in general diagnostics and repair, vintage vehicle restoration or aftermarket modification I've learned to the ins and outs the many vehicle parts and systems and how they work together to create a working product.</p>
+            <p>To me modern websites are like modern vehicles. Both are made of modules that are brought together making a complete system. An app or website just like a project car comes together in steps and pieces. Some are off the shelf and fit    right in while others are custom specific to the application. 
+            </p>
+            <p>I bring to coding the same mindset I have held in my automotive pursuits. An inate desire to continue learning and expand my deeper knowledge of technology I encounter while being able to use the tools available and apply practical and efficient solutions to the task and hand.</p>
+            <%- include("./partials/resume-button") %>
+          </div>
+          
+          <div class="col-lg-4 text-center">
+              <div class="card card-body bg-almost-black pb-4">
+                  <img id="profile-image" class="img-fluid" src="images/me.jpg"  alt="Me and the Truck">
+                  <!--<p class="mt-3">Out in Llano getting some nature.</p>-->
+              </div>     
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include("./partials/bootstrap") %>
+  <script>
+  $("#about-link").addClass("active");
+  </script>
+</body>
+

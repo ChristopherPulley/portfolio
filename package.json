@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "2.0.0",
+  "description": "second try",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher F Pulley",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "nodemailer": "^6.4.4"
+  }
+}
