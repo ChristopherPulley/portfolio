@@ -34,8 +34,8 @@ app.use(flash());
 
 // share these values with index.js routes
 app.use((req, res, next) => {
-  res.locals._user = gmail_user;
-  res.locals._pass = gmail_pass;
+  res.locals.g_user = gmail_user;
+  res.locals.g_pass = gmail_pass;
   // allow messages to be seen by all routes
   res.locals.error = req.flash("error");
   res.locals.success = req.flash("success");

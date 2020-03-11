@@ -1,5 +1,8 @@
 // routes for homepage and user registration/login functions
 
+const gmail_user = res.locals.g_user;
+const gmail_pass = res.locals.g_pass;
+
 // required packages and files
 const express = require("express"),
   router = express.Router({ mergeParams: true }),
@@ -36,8 +39,8 @@ router.post("/contact", (req, res) => {
   const smtpTrans = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: res.locals._user,
-      pass: res.locals._pass
+      user: gmail_user,
+      pass: gmail_pass
     }
   });
 
