@@ -69,7 +69,7 @@ router.post("/contact", (req, res) => {
 });
 
 router.get("*", (req, res) => {
-  router.redirect("/");
+  router.redirect("back");
 });
 
 // always export !!!
