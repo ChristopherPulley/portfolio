@@ -36,8 +36,8 @@ router.post("/contact", (req, res) => {
   const smtpTrans = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: _user,
-      pass: _pass
+      user: res.locals._user,
+      pass: res.locals._pass
     }
   });
 
