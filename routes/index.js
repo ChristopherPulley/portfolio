@@ -69,7 +69,7 @@ router.post("/contact", (req, res) => {
 });
 
 router.get("*", (req, res) => {
-  router.redirect("back");
+  router.send("Sorry, that page does not exist. Please go back.");
 });
 
 // always export !!!
