@@ -1,6 +1,6 @@
 // routes for homepage and user registration/login functions
 
-const gmail_user = process.env.gmail_user;
+const gmail_user = process.env.gmail_user; // stored on heroku server for safety
 const gmail_pass = process.env.gmail_pass;
 
 // required packages and files
