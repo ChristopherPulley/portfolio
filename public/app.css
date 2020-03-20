@@ -24,11 +24,13 @@ body {
 }
 
 .navbar {
+  background-color: rgb(15, 15, 15);
   z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
   transition: top 0.3s;
+  opacity: 0.8;
 }
 
 .nav-link {
