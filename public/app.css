@@ -24,12 +24,18 @@ body {
 }
 
 .navbar {
+  z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
   transition: top 0.3s;
 }
 
+.nav-link {
+  background-color: rgb(15, 15, 15);
+  opacity: 0.5;
+  display: inline-block;
+}
 .background-header {
   color: #fff;
   background-repeat: no-repeat;
