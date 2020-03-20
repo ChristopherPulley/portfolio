@@ -89,10 +89,18 @@ body {
 }
 
 .jumbotron {
+  padding-top: 8em;
   background: none;
-  margin-top: 8em;
   text-align: center;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
 }
 
 .social-icon {
