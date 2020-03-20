@@ -33,8 +33,9 @@ body {
 
 .nav-link {
   background-color: rgb(15, 15, 15);
-  opacity: 0.5;
+  opacity: 0.8;
   display: inline-block;
+  width: 25%;
 }
 .background-header {
   color: #fff;
