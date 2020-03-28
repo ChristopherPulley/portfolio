@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="msg-container">
       <% if (error && error.length > 0) { %>
       <div class="flashMessage alert alert-danger" role="alert">
         <%= error %>
@@ -67,6 +67,8 @@
                 type="submit"
                 value="Send Email"
                 class="btn btn-danger  btn-lg"
+                id="submit-button"
+                name="submit-button"
               />
               <input type="reset" name="contactReset" id="contactReset"
                class="btn btn-danger btn-lg float-right"
@@ -78,7 +80,7 @@
         </div>
       </div>
     </div>
-
+    <%- include("./partials/submitListener") %>
     <%- include("./partials/bootstrap") %>
   <script>
   $("#contact-link").addClass("active");

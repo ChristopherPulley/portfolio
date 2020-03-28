@@ -3,6 +3,8 @@
 const gmail_user = process.env.gmail_user; // stored on heroku server for safety
 const gmail_pass = process.env.gmail_pass;
 
+//console.log(gmail_user + " : " + gmail_pass);
+
 // required packages and files
 const express = require("express"),
   router = express.Router({ mergeParams: true }), // must merge for email to work
@@ -35,6 +37,7 @@ router.get("/contact", (req, res) => {
 });
 
 router.post("/contact", (req, res) => {
+  var resetButton = req.body.contactReset;
   // Instantiate the SMTP server
   const smtpTrans = nodemailer.createTransport({
     service: "gmail",
@@ -54,17 +57,14 @@ router.post("/contact", (req, res) => {
 
   // Attempt to send the email
   smtpTrans.sendMail(mailOpts, (error, response) => {
-    var resetButton = req.body.contactReset;
-
     if (error) {
       console.log("contact-failure"); // Show message indicating failure
       req.flash("error", "Message Transmission Failed - Please try again.");
-      res.redirect("/contact");
     } else {
       console.log("contact-success"); // Show message indicating success
       req.flash("success", "Message Transmitted Successfully - Thank you.");
-      res.redirect("/contact");
     }
+    res.redirect("/contact");
   });
 });
 
