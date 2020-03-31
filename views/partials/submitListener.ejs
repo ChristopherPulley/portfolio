@@ -1,7 +1,9 @@
 <script>
-  document
-    .getElementById("submit-button")
-    .addEventListener("click", function() {
-      document.getElementById("msg-container").innerHTML = "";
-    });
+  $("#submit-button").click(function() {
+    $("#msg-container").empty();
+  });
+
+  $("#contactReset").click(function() {
+    $("#msg-container").empty();
+  });
 </script>
