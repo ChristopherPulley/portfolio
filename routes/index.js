@@ -10,7 +10,7 @@ const express = require("express"),
   router = express.Router({ mergeParams: true }), // must merge for email to work
   nodemailer = require("nodemailer");
 
-//  root route
+//  main page routes
 router.get("/", (req, res) => {
   console.log("Navigated to Root");
   res.render("landing");
@@ -66,6 +66,14 @@ router.post("/contact", (req, res) => {
     }
     res.redirect("/contact");
   });
+});
+
+// --------- Portfolio include site routes -----------
+
+// spa generic route
+router.get("/portfolio/spa_generic", (req, res) => {
+  console.log("Navigated to SPA GENERIC");
+  res.render("spa_generic");
 });
 
 router.get("*", (req, res) => {

@@ -8,45 +8,45 @@
     <%- include("./partials/navbar") %>
   </div>
 
-    <div class="container-fluid">
+  <div class="container-fluid">
 
-      <div class="row">
-          <div id="portfolio-header" class="col background-header">
-              <h1 class="display-3 header-text">Portfolio</h1>
-              <p class="lead header-text">These are things I've done.</p>
-          </div>
+    <div class="row">
+      <div id="portfolio-header" class="col background-header">
+        <h1 class="display-3 header-text">Portfolio</h1>
+        <p class="lead header-text">These are things I've done.</p>
       </div>
+    </div>
 <!-- top row -->
-      <div class="row"> 
-        <!-- Portfolio V2 -->
-        <div class="col-lg-4 mt-4">
-          <div class="card bg-dark border-lgt">
-            <div class="card-header border-lgt">
-              <h5>Portfolio V2</h5>
-            </div>
-            <div class="card-body">
-                <a href="/">
+    <div class="row"> 
+      <!-- Portfolio V2 -->
+      <div class="col-lg-4 mt-4">
+        <div class="card bg-dark border-lgt">
+          <div class="card-header border-lgt">
+            <h5>Portfolio V2</h5>
+          </div>
+          <div class="card-body">
+            <a href="/">
               <img class="img-fluid" src="images/portfoliov2.png" alt="">
             </a>
-            <p class="mt-2 mb-0"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim   atque omnis ut voluptatibus ducimus voluptate maiores mollitia a numquam            voluptatem quaerat beatae aspernatur possimus.
+            <p class="mt-2 mb-0">A base of operations as I build my online presence and search for a job in the Web Development and Tech community. Here you can view my online portfolio of apps and projects as well as some of my Graphic Design work.  
             </p>
-            </div>
-            <div class="card-footer border-lgt">
-                <p>Tech: NodeJs, Express, Bootstrap, Font Awesome, Connect-Flash</p>
-            </div>
+          </div>
+          <div class="card-footer border-lgt">
+            <p>Tech: NodeJs, Express, Bootstrap, Font Awesome, Connect-Flash, Node Mailer</p>
           </div>
         </div>
-        <!-- Gone Overland Blog -->
-        <div class="col-lg-4 mt-4">
-          <div class="card bg-dark border-lgt">
-            <div class="card-header border-lgt">
-              <h5>GoneOverland.net</h5>
-            </div>
+      </div>
+      <!-- Gone Overland Blog -->
+      <div class="col-lg-4 mt-4">
+        <div class="card bg-dark border-lgt">
+          <div class="card-header border-lgt">
+            <h5>GoneOverland.net</h5>
+          </div>
           <div class="card-body">
             <a href="http://www.goneoverland.net">
               <img class="img-fluid" src="images/goneoverland-cover.png" alt="">
             </a>
-            <p class="mt-2 mb-0"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim   atque omnis ut voluptatibus ducimus voluptate maiores mollitia a numquam            voluptatem quaerat beatae aspernatur possimus.
+            <p class="mt-2 mb-0"> A blog I maintain detailing my Offoad and Overland Adventures in my 4x4. A simple layout using an included WordPress theme 
             </p>
           </div>
           <div class="card-footer border-lgt">
@@ -55,7 +55,7 @@
         </div>
       </div>
       <!-- Porfolio V1 -->
-      <div class="col-lg-4 mt-4 mb-5">
+      <div class="col-lg-4 mt-4 mb-4 mb-lg-5">
         <div class="card bg-dark border-lgt">
           <div class="card-header border-lgt">
             <h5>Portfolio V1</h5>
@@ -64,23 +64,48 @@
             <a href="https://porfolio-v1.herokuapp.com/">
               <img class="img-fluid" src="images/portfoliov1.png" alt="">
             </a>
+            <p class="mt-2 mb-0"> A first version of a portfolio site using a single page design and a Bootstrap CardStack for each content area.
+            </p>
+          </div>
+          <div class="card-footer border-lgt">
+          <p>Tech: NodeJs, Express, Bootstrap, Font Awesome</p>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!-- End 1st Row -->
+
+    <!-- 2nd row -->
+    <div class="row mb-5">
+      <!-- SPA GENERIC -->
+      <div class="col-lg-4 mt-0 mt-lg-4">
+        <div class="card bg-dark border-lgt">
+          <div class="card-header border-lgt">
+            <h5>SPA GENERIC</h5>
+          </div>
+          <div class="card-body">
+            <a href="/portfolio/spa_generic">
+              <img class="img-fluid" src="images/goatMower.jpg" alt="">
+            </a>
             <p class="mt-2 mb-0"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim   atque omnis ut voluptatibus ducimus voluptate maiores mollitia a numquam            voluptatem quaerat beatae aspernatur possimus.
             </p>
           </div>
-        <div class="card-footer border-lgt">
-          <p>Tech: NodeJs, Express, Bootstrap, Font Awesome</p>
+          <div class="card-footer border-lgt">
+            <p>Tech: NodeJs, Express, Bootstrap, Font Awesome, Connect-Flash</p>
+          </div>
         </div>
       </div>
-    </div>  
-<!-- End Row -->      
+    </div>
+    <!-- End 2nd Row -->
+ 
   </div>
-<!-- second row -->
+  <!-- End Container -->
 
-<!-- End Body -->     
-</div>
+  <%- include("./partials/bootstrap") %>
+  <%- include("./partials/scripts/navbar_scroll") %>
 
-    <%- include("./partials/bootstrap") %>
   <script>
-  $("#portfolio-link").addClass("active");
+    $("#portfolio-link").addClass("active");
   </script>
+
 </body>
