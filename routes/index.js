@@ -71,9 +71,9 @@ router.post("/contact", (req, res) => {
 // --------- Portfolio include site routes -----------
 
 // spa generic route
-router.get("/portfolio/spa_generic", (req, res) => {
-  console.log("Navigated to SPA GENERIC");
-  res.render("spa_generic");
+router.get("/portfolio/creatorzone", (req, res) => {
+  console.log("Navigated to CreatorZone");
+  res.render("creatorzone");
 });
 
 router.get("*", (req, res) => {

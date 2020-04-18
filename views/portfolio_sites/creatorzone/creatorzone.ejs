@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="/creatorzone.css" />
+
+    <!-- my personal free font awesome kit -->
+    <script src="https://kit.fontawesome.com/5b09ffae34.js"></script>
+
+    <title>CreatorZone</title>
+  </head>
+
+  <!-- start here -->
+  <body>
+    <!-- header and nav section -->
+    <section id="header-section" name="header-section" class="">
+      <nav id="navbar" class="navbar navbar-expand-sm navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="/portfolio"
+            ><i class="fas fa-hammer"></i> CreatorZone</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a id="home-link" class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="explore-link" class="nav-link" href="#">Explore</a>
+              </li>
+              <li class="nav-item">
+                <a id="build-link" class="nav-link" href="#">Build</a>
+              </li>
+              <li class="nav-item">
+                <a id="about-link" class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- theme section -->
+    <section id="theme-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-7">
+            <div class="left">
+              <h3 class="display-3">Dream</h3>
+              <p class="lead">Lorem ipsum dolor sit, amet consectetur.</p>
+            </div>
+            <div class="center">
+              <h3 class="display-3">Design</h3 class="display-3">
+              <p class="lead">Lorem ipsum dolor sit amet.</p class="lead">
+            </div>
+            <div class="right">
+              <h3 class="display-3">Build</h3 class="display-3">
+              <p class="lead">Lorem ipsum dolor sit amet consectetur.</p class="lead">
+            </div>
+          </div>
+          <!-- sign-up card -->
+          <div class="col-sm-12 col-md-5 ">
+            <div class="card card-body bg-dark text-light text-center mx-5">
+              <h3>Sign Up Free!</h3>
+              <p>Fill out the form and submit.</p>
+
+              <form action="">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Username"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    placeholder="Confirm Password"
+                    class="form-control form-control-lg"
+                  />
+                </div>              
+                <div>
+                  <button
+                    type="submit"
+                    id="join-button"
+                    class="btn btn-lg btn-primary btn-outline-light my-button"
+                    >Join Now!
+                  </button>
+                </div>       
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mission section -->
+    <section id="mission-section">
+      <div class="row py-5">
+        <div class="col">
+          <div class="container text-light text-center">
+            <h1>Make Something Amazing!</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam maxime cumque quam suscipit? Praesentium optio quis saepe ipsum sit iusto corrupti! Sunt harum ipsa delectus!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mission section -->
+    <section id=""></section>
+
+    <!-- footer section -->
+    <section id=""></section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          $("#navbar").css("top", "0");
+        } else {
+          $("#navbar").css("top", "-100px");
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+
+    <script>
+      //init scrollspy
+      $("body").scrollspy({ target: "#main-nav" });
+
+      // Add smooth scrolling
+      $("#main-nav a").on("click", function(e) {
+        // Check for a hash value
+        if (this.hash !== "") {
+          // Prevent default behavior
+          e.preventDefault();
+
+          // Store hash
+          const hash = this.hash;
+
+          // Animate smooth scroll
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800,
+            function() {
+              // Add hash to URL after scroll
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

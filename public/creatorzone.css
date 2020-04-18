@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+}
+
+#header-section {
+  background-color: black;
+}
+
+#navbar {
+  border-bottom: 2px solid blue;
+}
+
+#theme-section {
+  background-image: url("images/creatorzone/circularsaw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 550px;
+  padding-top: 4em;
+}
+
+#theme-section h3 {
+  color: white;
+}
+
+#mission-section {
+  background-color: #0056b3;
+  overflow: hidden;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.card form .my-button :hover {
+  background-color: #0056b3;
+  color: #fff;
+}
