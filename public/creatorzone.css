@@ -4,27 +4,35 @@ body {
 
 #header-section {
   background-color: black;
+  margin-bottom: 3.7em;
 }
 
-#navbar {
-  border-bottom: 2px solid blue;
+#main-nav {
+  border-bottom: 3px solid blue;
 }
 
-#theme-section {
+.navbar {
+  background-color: rgb(15, 15, 15);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  opacity: 0.8;
+}
+
+#home-section {
   background-image: url("images/creatorzone/circularsaw.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   min-height: 550px;
   padding-top: 4em;
+  color: #fff;
 }
 
-#theme-section h3 {
-  color: white;
-}
-
-#mission-section {
-  background-color: #0056b3;
-  overflow: hidden;
+.card {
+  min-width: 275px;
 }
 
 .left {
@@ -39,7 +47,21 @@ body {
   text-align: right;
 }
 
-.card form .my-button :hover {
+.section-header {
   background-color: #0056b3;
+  overflow: hidden;
+}
+
+.section-content {
+  padding-top: 2em;
+  padding-bottom: 2em;
   color: #fff;
+}
+
+.section-image {
+  padding: 5px;
+}
+
+.modal-item {
+  background-color: lightgray;
 }

@@ -25,7 +25,7 @@
   <body>
     <!-- header and nav section -->
     <section id="header-section" name="header-section" class="">
-      <nav id="navbar" class="navbar navbar-expand-sm navbar-dark">
+      <nav id="main-nav" class="navbar navbar-expand-sm navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="/portfolio"
             ><i class="fas fa-hammer"></i> CreatorZone</a
@@ -42,16 +42,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a id="home-link" class="nav-link" href="#">Home</a>
+                <a id="home-link" class="nav-link" href="#home-section">Home</a>
               </li>
               <li class="nav-item">
-                <a id="explore-link" class="nav-link" href="#">Explore</a>
+                <a id="explore-link" class="nav-link" href="#explore-section">Explore</a>
               </li>
               <li class="nav-item">
-                <a id="build-link" class="nav-link" href="#">Build</a>
+                <a id="build-link" class="nav-link" href="#build-section">Build</a>
               </li>
               <li class="nav-item">
-                <a id="about-link" class="nav-link" href="#">About Us</a>
+                <a id="about-link" class="nav-link" href="#about-section">About Us</a>
               </li>
             </ul>
           </div>
@@ -59,26 +59,26 @@
       </nav>
     </section>
 
-    <!-- theme section -->
-    <section id="theme-section">
+    <!-- home section -->
+    <section id="home-section">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-7">
-            <div class="left">
-              <h3 class="display-3">Dream</h3>
+          <div class="col-md-7 mb-5">
+            <div class="left">          
+              <h3 class="display-3"><span><i class="fas fa-brain"></i></span> Dream</h3>
               <p class="lead">Lorem ipsum dolor sit, amet consectetur.</p>
             </div>
             <div class="center">
-              <h3 class="display-3">Design</h3 class="display-3">
+              <h3 class="display-3"><span><i class="fas fa-pencil-ruler"></i></span> Design</h3 class="display-3">
               <p class="lead">Lorem ipsum dolor sit amet.</p class="lead">
             </div>
             <div class="right">
-              <h3 class="display-3">Build</h3 class="display-3">
+              <h3 class="display-3"><span><i class="fas fa-hammer"></i></span> Build</h3 class="display-3">
               <p class="lead">Lorem ipsum dolor sit amet consectetur.</p class="lead">
             </div>
           </div>
           <!-- sign-up card -->
-          <div class="col-sm-12 col-md-5 ">
+          <div class="col-md-5 mb-5">
             <div class="card card-body bg-dark text-light text-center mx-5">
               <h3>Sign Up Free!</h3>
               <p>Fill out the form and submit.</p>
@@ -116,7 +116,7 @@
                   <button
                     type="submit"
                     id="join-button"
-                    class="btn btn-lg btn-primary btn-outline-light my-button"
+                    class="btn btn-lg btn-primary btn-outline-light"
                     >Join Now!
                   </button>
                 </div>       
@@ -127,23 +127,197 @@
       </div>
     </section>
 
-    <!-- mission section -->
-    <section id="mission-section">
-      <div class="row py-5">
+    <!-- explore section -->
+    <section id="explore-section">
+      <div class="row py-5 section-header">
         <div class="col">
           <div class="container text-light text-center">
-            <h1>Make Something Amazing!</h1>
+            <h1>Check out our Member Projects!</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam maxime cumque quam suscipit? Praesentium optio quis saepe ipsum sit iusto corrupti! Sunt harum ipsa delectus!</p>
+            <a href="#" class="btn btn-outline-light">Visit our Gallery!</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- mission section -->
-    <section id=""></section>
+    <!-- explore section content-->
+    <section id="explore-section-content">
+      <div class="container section-content">
+        <div class="row">
+          <div class="col-7">
+            <div class="">
+              <img class="img-fluid section-image" src="http://source.unsplash.com/400x300/?crafts" alt="" height="400px" width="300px">
+
+              <img class="img-fluid section-image" src="http://source.unsplash.com/401x300/?crafts" alt="" height="400px" width="300px">
+
+              <img class="img-fluid section-image" src="http://source.unsplash.com/402x300/?crafts" alt="" height="400px" width="300px">
+
+              <img class="img-fluid section-image" src="http://source.unsplash.com/403x300/?crafts" alt="" height="400px" width="300px">
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="text-center pl-5 pt-5">
+              <h2>Just a taste of what our members have created!</h2>
+              <div class="mt-5">
+                <span><i class="fas fa-brain"></i></span>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+              <div class="mt-3">
+                <span><i class="fas fa-pencil-ruler"></i></span>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+              <div class="mt-3">
+                <span><i class="fas fa-hammer"></i></span>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- build section -->
+    <section id="build-section">
+      <div class="row py-5 section-header">
+        <div class="col">
+          <div class="container text-light text-center">
+            <h1>See how we can bring your ideas to life!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum dolorem magni, quisquam veniam maiores!</p>
+            <a href="#" class="btn btn-outline-light">Tour our build area!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- build section content-->
+    <section id="build-section-content">
+      <div class="container section-content">
+        <div class="row">      
+          <div class="col-5">
+            <div class="text-center pl-5 pt-5">
+              <h2>The latest tools to make your dreams come true!</h2>
+              <div class="mt-5">
+                <span><i class="fas fa-brain"></i></span>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+              <div class="mt-3">
+                <span><i class="fas fa-pencil-ruler"></i></span>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+              <div class="mt-3">
+                <span><i class="fas fa-hammer"></i></span>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="">
+              <img class="img-fluid section-image" src="http://source.unsplash.com/400x300/?tools" alt="" height="400px" width="300px">
+
+              <img class="img-fluid section-image" src="http://source.unsplash.com/401x300/?tools" alt="" height="400px" width="300px">
+
+              <img class="img-fluid section-image" src="http://source.unsplash.com/402x300/?tools" alt="" height="400px" width="300px">
+
+              <img class="img-fluid section-image" src="http://source.unsplash.com/403x300/?tools" alt="" height="400px" width="300px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about-section">
+      <div class="row py-5 section-header">
+        <div class="col">
+          <div class="container text-light text-center">
+            <h1>Learn about who we are!</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam maxime cumque quam suscipit? Praesentium ipsum sit iusto corrupti!</p>
+            <a href="#" class="btn btn-outline-light">See the story of us!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section content-->
+    <section id="about-section-content">
+      <div class="container section-content">
+        <div class="row">
+          <div class="col-4">
+            <div class="">
+              <img class="img-fluid section-image" src="http://source.unsplash.com/400x300/?mountain" alt="" height="400px" width="300px">
+            </div>
+          </div>      
+          <div class="col-4">
+            <div class="text-center">
+              <h3 class="pt-5">Where we come from.</h3>
+              <h4 class="pt-5">And why we do what we do.</h4>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="">
+              <img class="img-fluid section-image" src="http://source.unsplash.com/400x300/?lake" alt="" height="400px" width="300px">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="text-center pt-4">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus optio minima voluptate dolorum quasi quia accusantium in animi quas consequatur, odio tempore cumque, voluptatibus placeat praesentium quo, sint provident illo.</p>
+        </div>
+        </div>
+      </div>
+    </section>
 
     <!-- footer section -->
-    <section id=""></section>
+    <section id="footer-section">
+      <div class="row">
+        <div class="col text-center bg-dark text-light py-4">
+          <p>Copyright <span><i class="far fa-copyright"></i></span> <span id="year"></span> CreatorZone</p>
+          <button
+          class="btn btn-outline-light"
+          data-toggle="modal"
+          data-target="#contact-modal"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact modal -->
+    <div class="modal fade text-dark" id="contact-modal">
+      <div class="modal-dialog">
+        <div class="modal-content modal-item">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Us</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn-primary btn-block">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -162,24 +336,6 @@
     ></script>
 
     <script>
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          $("#navbar").css("top", "0");
-        } else {
-          $("#navbar").css("top", "-100px");
-        }
-        prevScrollpos = currentScrollPos;
-      };
-    </script>
-
-    <script>
-      // Get the current year for the copyright
-      $("#year").text(new Date().getFullYear());
-    </script>
-
-    <script>
       //init scrollspy
       $("body").scrollspy({ target: "#main-nav" });
 
@@ -189,10 +345,8 @@
         if (this.hash !== "") {
           // Prevent default behavior
           e.preventDefault();
-
           // Store hash
           const hash = this.hash;
-
           // Animate smooth scroll
           $("html, body").animate(
             {
@@ -207,5 +361,18 @@
         }
       });
     </script>
+
+    <script>
+      // smooth scroll to top of screen on refresh or reload
+      window.onload = function () {
+        document.getElementById("home-link").click();
+      }
+    </script>
+
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+
   </body>
 </html>
