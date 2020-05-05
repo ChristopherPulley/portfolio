@@ -70,12 +70,19 @@ router.post("/contact", (req, res) => {
 
 // --------- Portfolio include site routes -----------
 
-// spa generic route
+// creatorzone route
 router.get("/portfolio/creatorzone", (req, res) => {
   console.log("Navigated to CreatorZone");
   res.render("creatorzone");
 });
 
+// ps_portfolio route
+router.get("/portfolio/ps_portfolio", (req, res) => {
+  console.log("Navigated to PhotoShop Portfolio");
+  res.render("ps_portfolio");
+});
+
+// ----------- Catch-all for non-existent routes
 router.get("*", (req, res) => {
   res.send("Sorry, that page does not exist. Please go back.");
 });
