@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+}
+
+#header-section {
+  background-color: black;
+  margin-bottom: 3.7em;
+}
+
+#main-nav {
+  border-bottom: 3px solid maroon;
+}
+
+.navbar-brand {
+  color: azure;
+}
+
+.image-box {
+  background-image: url("/images/ps_portfolio/Pulley_C_C-1_Project_JPG.jpg");
+}

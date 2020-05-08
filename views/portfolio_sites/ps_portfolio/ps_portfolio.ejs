@@ -4,7 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Photoshop Portfolio</title>
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="/ps_portfolio.css" />
+
+    <!-- my personal free font awesome kit -->
+    <script src="https://kit.fontawesome.com/5b09ffae34.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>PhotoShop Portfolio</title>
   </head>
-  <body></body>
+
+  <!-- start here -->
+  <body>
+    <!-- header and nav section -->
+    <section id="header-section" name="header-section" class="">
+      <nav id="main-nav" class="navbar navbar-expand-sm">
+        <div class="container">
+          <a class="navbar-brand" href="/portfolio"
+            ><i class="far fa-images"></i> PhotoShop Portfolio</a
+          >
+        </div>
+      </nav>
+    </section>
+
+    <section id="carousel-section" name="carousel-section"></section>
+    <div class="row">
+      <div class="col-sm-2">hello</div>
+      <div class="col-sm-8">
+        <div class="image-box"></div>
+      </div>
+      <div class="col-sm-2">world</div>
+    </div>
+
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
 </html>
