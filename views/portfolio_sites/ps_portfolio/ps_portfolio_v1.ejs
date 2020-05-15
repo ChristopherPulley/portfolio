@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="/ps_portfolio.css" />
+
+    <!-- my personal free font awesome kit -->
+    <script src="https://kit.fontawesome.com/5b09ffae34.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>PhotoShop Portfolio</title>
+  </head>
+
+  <!-- start here -->
+  <body>
+    <!-- header and nav section -->
+    <section id="header-section" name="header-section" class="">
+      <nav id="main-nav" class="navbar navbar-expand-sm">
+        <div class="container">
+          <a class="navbar-brand" href="/portfolio"
+            ><i class="far fa-images"></i> PhotoShop Portfolio</a
+          >
+        </div>
+      </nav>
+    </section>
+
+    <section id="slideshow-section" name="slideshow-section">
+      <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <div class="thumbnail-line">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active">
+                <img
+                  src="/images/ps_portfolio/macbark_websplash.jpg"
+                  alt=""
+                  class="thumbnail img-fluid"
+                />
+              </li>
+              <li data-target="#myCarousel" data-slide-to="1">
+                <img
+                  src="/images/ps_portfolio/Pulley_C_C-1_Project_JPG.jpg"
+                  alt=""
+                  class="thumbnail"
+                />
+              </li>
+              <li data-target="#myCarousel" data-slide-to="2">
+                <img
+                  src="/images/ps_portfolio/Pulley_C_C2_VisualPunProject_JPG.jpg"
+                  alt=""
+                  class="thumbnail"
+                />
+              </li>
+              <li data-target="#myCarousel" data-slide-to="3">
+                <img
+                  src="/images/ps_portfolio/Pulley_C_C3_Project_WordPlay_JPG.jpg"
+                  alt=""
+                  class="thumbnail"
+                />
+              </li>
+              <li data-target="#myCarousel" data-slide-to="4">
+                <img
+                  src="/images/ps_portfolio/Pulley_C_Cap_MiniProject_MoviePoster_JPG.jpg"
+                  alt=""
+                  class="thumbnail"
+                />
+              </li>
+              <li data-target="#myCarousel" data-slide-to="5">
+                <img
+                  src="/images/ps_portfolio/Pulley_C_Cap_ProjectMoviePoster_JPG.jpg"
+                  alt=""
+                  class="thumbnail"
+                />
+              </li>
+            </ol>
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img
+                src="/images/ps_portfolio/macbark_websplash.jpg"
+                alt="MacBark WebSplash"
+              />
+            </div>
+
+            <div class="item">
+              <img
+                src="/images/ps_portfolio/Pulley_C_C-1_Project_JPG.jpg"
+                alt="Dillobit"
+              />
+            </div>
+
+            <div class="item">
+              <img
+                src="/images/ps_portfolio/Pulley_C_C2_VisualPunProject_JPG.jpg"
+                alt="Deviled Eggs"
+              />
+            </div>
+
+            <div class="item">
+              <img
+                src="/images/ps_portfolio/Pulley_C_C3_Project_WordPlay_JPG.jpg"
+                alt="Wordplay Oranges"
+              />
+            </div>
+
+            <div class="item">
+              <img
+                src="/images/ps_portfolio/Pulley_C_Cap_MiniProject_MoviePoster_JPG.jpg"
+                alt="Monster Movie WebSplash"
+              />
+            </div>
+
+            <div class="item">
+              <img
+                src="/images/ps_portfolio/Pulley_C_Cap_ProjectMoviePoster_JPG.jpg"
+                alt="MacBark Movie Poster"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>

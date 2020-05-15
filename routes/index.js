@@ -59,7 +59,7 @@ router.post("/contact", (req, res) => {
   smtpTrans.sendMail(mailOpts, (error, response) => {
     if (error) {
       console.log("contact-failure"); // Show message indicating failure
-      req.flash("error", "Message Transmission Failed - Please try again.");
+      req.flash("error", "Message Transmission Failed - Please try again or obtain email from resume.");
     } else {
       console.log("contact-success"); // Show message indicating success
       req.flash("success", "Message Transmitted Successfully - Thank you.");

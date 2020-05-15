@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+}
+
+#header-section {
+  background-color: black;
+}
+
+#main-nav {
+  border-bottom: 3px solid maroon;
+}
+
+.navbar-brand {
+  color: azure;
+}
+
+.item {
+  max-height: 50%;
+  width: auto;
+}
+
+.thumbnail-line {
+  margin-bottom: 5em;
+}
+
+.thumbnail {
+  height: 75px;
+  width: 125px;
+}
+
+.carousel-indicators {
+  margin: 10px 0 0;
+
+  position: static;
+
+  width: 100%;
+}
+
+.carousel-indicators li {
+  border: none;
+  display: inline-block;
+  height: auto;
+
+  width: auto;
+}
+
+.carousel-indicators li.active img {
+  /* */
+}
+
+.carousel-indicators li:hover img {
+  opacity: 0.75;
+}
+

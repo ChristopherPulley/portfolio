@@ -34,14 +34,112 @@
       </nav>
     </section>
 
-    <section id="carousel-section" name="carousel-section"></section>
-    <div class="row">
-      <div class="col-sm-2">hello</div>
-      <div class="col-sm-8">
-        <div class="image-box"></div>
+    <section id="slideshow-section" name="slideshow-section">
+      <div class="container">
+        <div id="thumbnail_row" class="thumbnail_row">
+          <img
+            id="image_1"
+            src="/images/ps_portfolio/macbark_websplash.jpg"
+            alt=""
+            class="thumbnail btn"
+          />
+
+          <img
+            id="image_2"
+            src="/images/ps_portfolio/Pulley_C_C-1_Project_JPG.jpg"
+            alt=""
+            class="thumbnail btn"
+          />
+
+          <img
+            id="image_3"
+            src="/images/ps_portfolio/Pulley_C_C2_VisualPunProject_JPG.jpg"
+            alt=""
+            class="thumbnail btn"
+          />
+
+          <img
+            id="image_4"
+            src="/images/ps_portfolio/Pulley_C_C3_Project_WordPlay_JPG.jpg"
+            alt=""
+            class="thumbnail btn"
+          />
+
+          <img
+            id="image_5"
+            src="/images/ps_portfolio/Pulley_C_Cap_MiniProject_MoviePoster_JPG.jpg"
+            alt=""
+            class="thumbnail btn"
+          />
+
+          <img
+            id="image_6"
+            src="/images/ps_portfolio/Pulley_C_Cap_ProjectMoviePoster_JPG.jpg"
+            alt=""
+            class="thumbnail btn"
+          />
+        </div>
+
+        <div class="current_image_box">
+          <img
+            id="current_image"
+            class="img-fluid"
+            src="/images/ps_portfolio/Pulley_C_Cap_ProjectMoviePoster_JPG.jpg"
+            alt=""
+          />
+        </div>
       </div>
-      <div class="col-sm-2">world</div>
-    </div>
+    </section>
+
+    <section id="footer_section">
+      <div class="row text-center">
+        <p class="lead">
+          Copyright <span><i class="far fa-copyright"></i> </span
+          ><span id="year"></span> Christopher Pulley
+        </p>
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function () {
+        $("#image_1").click(function () {
+          $("#current_image").attr(
+            "src",
+            "/images/ps_portfolio/macbark_websplash.jpg"
+          );
+        });
+        $("#image_2").click(function () {
+          $("#current_image").attr(
+            "src",
+            "/images/ps_portfolio/Pulley_C_C-1_Project_JPG.jpg"
+          );
+        });
+        $("#image_3").click(function () {
+          $("#current_image").attr(
+            "src",
+            "/images/ps_portfolio/Pulley_C_C2_VisualPunProject_JPG.jpg"
+          );
+        });
+        $("#image_4").click(function () {
+          $("#current_image").attr(
+            "src",
+            "/images/ps_portfolio/Pulley_C_C3_Project_WordPlay_JPG.jpg"
+          );
+        });
+        $("#image_5").click(function () {
+          $("#current_image").attr(
+            "src",
+            "/images/ps_portfolio/Pulley_C_Cap_MiniProject_MoviePoster_JPG.jpg"
+          );
+        });
+        $("#image_6").click(function () {
+          $("#current_image").attr(
+            "src",
+            "/images/ps_portfolio/Pulley_C_Cap_ProjectMoviePoster_JPG.jpg"
+          );
+        });
+      });
+    </script>
 
     <script>
       // Get the current year for the copyright

@@ -1,10 +1,10 @@
 body {
   background-color: black;
+  overflow-x: hidden;
 }
 
 #header-section {
   background-color: black;
-  margin-bottom: 3.7em;
 }
 
 #main-nav {
@@ -15,6 +15,36 @@ body {
   color: azure;
 }
 
-.image-box {
-  background-image: url("/images/ps_portfolio/Pulley_C_C-1_Project_JPG.jpg");
+.navbar-brand :hover {
+  color: maroon;
+}
+
+.thumbnail_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  display: inline;
+  height: 75px;
+  width: 125px;
+  margin: 1em;
+}
+
+.current_image_box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+#current_image {
+  max-width: 100%;
+  height: auto;
+}
+
+#footer_section {
+  color: white;
+  border-top: 3px solid maroon;
+  padding-top: 1em;
 }
