@@ -1,14 +1,14 @@
 // routes for homepage and user registration/login functions
 
-const gmail_user = process.env.gmail_user; // stored on heroku server for safety
-const gmail_pass = process.env.gmail_pass;
+const MAILGUN_API_KEY = process.env.MAILGUN_API_KEY; // stored on heroku server for safety
+const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN;
+const GMAIL_ADDRESS = process.env.GMAIL_ADDRESS;
 
 //console.log(gmail_user + " : " + gmail_pass);
 
 // required packages and files
 const express = require("express"),
-  router = express.Router({ mergeParams: true }), // must merge for email to work
-  nodemailer = require("nodemailer");
+  router = express.Router({ mergeParams: true }); // must merge for email to work
 
 //  main page routes
 router.get("/", (req, res) => {
@@ -38,28 +38,30 @@ router.get("/contact", (req, res) => {
 
 router.post("/contact", (req, res) => {
   var resetButton = req.body.contactReset;
-  // Instantiate the SMTP server
-  const smtpTrans = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: gmail_user,
-      pass: gmail_pass
-    }
-  });
+  // Instantiate the MAILGUN API
+  const mailgun = require("mailgun-js");
+  const DOMAIN = "YOUR_DOMAIN_NAME";
+  const mg = mailgun({ apiKey: MAILGUN_API_KEY, domain: MAILGUN_DOMAIN });
 
   // Specify what the email will look like
   const mailOpts = {
-    from: "cpulleywebdesign@gmail.com", // This is ignored by Gmail
-    to: gmail_user,
+    from: `${req.body.email}`,
+    to: GMAIL_ADDRESS,
     subject: "New message from contact form at cpulleywebdesign.com",
-    text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+    text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`,
   };
 
-  // Attempt to send the email
-  smtpTrans.sendMail(mailOpts, (error, response) => {
+  // Attempt to send the email and display results for user
+
+  mg.messages().send(mailOpts, (error, response) => {
+    console.log(response);
+
     if (error) {
       console.log("contact-failure"); // Show message indicating failure
-      req.flash("error", "Message Transmission Failed - Please try again or obtain email from resume.");
+      req.flash(
+        "error",
+        "Message Transmission Failed - Please try again. Thank You."
+      );
     } else {
       console.log("contact-success"); // Show message indicating success
       req.flash("success", "Message Transmitted Successfully - Thank you.");
