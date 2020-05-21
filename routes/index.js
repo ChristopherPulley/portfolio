@@ -40,14 +40,13 @@ router.post("/contact", (req, res) => {
   var resetButton = req.body.contactReset;
   // Instantiate the MAILGUN API
   const mailgun = require("mailgun-js");
-  const DOMAIN = "YOUR_DOMAIN_NAME";
   const mg = mailgun({ apiKey: MAILGUN_API_KEY, domain: MAILGUN_DOMAIN });
 
   // Specify what the email will look like
   const mailOpts = {
     from: `${req.body.email}`,
     to: GMAIL_ADDRESS,
-    subject: "New message from contact form at cpulleywebdesign.com",
+    subject: `${req.body.subject} -from contact form at cpulleywebdesign.com`,
     text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`,
   };
 
